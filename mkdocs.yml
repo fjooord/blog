@@ -6,7 +6,7 @@ repo_name: blog
 repo_url: https://github.com/fjooord/blog/
 site_url: https://lascari.ai/
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2024 Jason Liu 
+copyright: Copyright &copy; 2024 Ford Lascari
 theme:
   name: material
   custom_dir: overrides
