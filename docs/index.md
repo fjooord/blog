@@ -5,66 +5,57 @@ description: Explore RAG techniques, AI engineering jobs, and consulting insight
 
 # :boom: What's up?
 
-I'm a machine learning engineer, angel investor, and startup advisor. Creator of [Instructor](https://github.com/jxnl/instructor) and ML/data science educator. I write about consulting, open source, personal work, and applying LLMs. 
-
-[Help me improve my RAG](./systematically-improve-your-rag.md){ .md-button .md-button--primary }
-[Work with me](services.md){ .md-button .md-button--secondary }
-
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 60px;">
+  <div style="display: flex; flex-direction: column; gap: 30px;">
+    <div>
+        I'm a generative AI consultant and developer with a wide range of experience from building production-ready LLM applications to advising startups on the use of multi-agent technology.
+        I write about learnings of custom builds, personal work, and applying LLMs.
+    </div>
+    <div style="text-align: center; justify-content: center; align-items: flex-end; display: flex;">
+      <a href="services" class="md-button md-button--secondary">Work with me</a>
+    </div>
+  </div>
+  <div>
+    <img src="static/beach_headshot.png" alt="Headshot" style="width: 800px; border-radius: 20%;">
+  </div>
+</div>
 
 ## Free Resources
 
 <div class="grid cards" markdown>
 
--   :material-book-open-variant:{ .lg .middle } __Struggling with RAG?__
+-   :material-book-open-variant:{ .lg .middle } __Real-World AI Case Studies__
 
     ---
 
-    Enhance your RAG skills with insights on techniques and best practices. Find valuable tips to improve your implementation, from beginner to advanced levels.
+    Dive into in-depth case studies from past projects and experiments. Learn about problem identification and solution building for real-world AI challenges.
 
-    [:octicons-arrow-right-24: Explore RAG resources](writing/category/rag/)
+    [:octicons-arrow-right-24: Explore Case Studies](writing/category/case-studies/)
 
--   :material-briefcase-search:{ .lg .middle } __Looking for AI Engineering Jobs?__
-
-    ---
-
-    Discover AI engineering roles at well-funded startups. Our job board features companies with strong growth potential and innovative projects.
-
-    [:octicons-arrow-right-24: Browse AI jobs](https://jobs.applied-llms.org/)
-
--   :material-pencil:{ .lg .middle } __Consulting Insights__
+-   :material-pencil:{ .lg .middle } __Generative AI Insights__
 
     ---
 
-     practices, strategies, and industry trends. Learn from real-world experiences and expert advice to enhance your consulting skills or make informed decisions for your business.
+    Dive into practical insights and battle-tested strategies for building generative AI applications, drawn directly from real-world implementations. Learn from hands-on experiences and concrete examples, not just theory, to sharpen your skills in developing and deploying cutting-edge AI solutions that actually work.
 
-    [:octicons-arrow-right-24: Read consulting articles](writing/category/consulting/)
+    [:octicons-arrow-right-24: Start Learning](writing/category/generative-ai/)
 
 
 -   :material-account-group:{ .lg .middle } __Social Media__
 
     ---
 
-    Stay connected and get the latest updates by following me on [:fontawesome-brands-youtube: YouTube](https://www.youtube.com/@jxnlco), [:fontawesome-brands-x-twitter: Twitter](https://x.com/jxnlco), and [:fontawesome-brands-github: GitHub](https://github.com/jxnl). These platforms are where I share my latest content, thoughts, and projects in the world of AI and machine learning.
+    Stay connected and get the latest updates by following me on [:fontawesome-brands-youtube: YouTube](https://www.youtube.com/@Fjooord), [:fontawesome-brands-x-twitter: Twitter](https://x.com/FJ000RD), and [:fontawesome-brands-github: GitHub](https://github.com/fjooord). These platforms are where I share my latest content, thoughts, and projects in the world of AI and machine learning.
+
+-   :material-rocket-launch:{ .lg .middle } __Under Construction: Something Awesome__
+
+    ---
+
+    Oops! Looks like we're still hammering away at this section. It's so cutting-edge, even I don't know what it'll be yet! Maybe a portal to another dimension? Stay tuned!
+
+    [:octicons-arrow-right-24: Check back later](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 </div>
-
-## Looking to improve your RAG?
-
-
-[![RAG Course Image](writing/posts/img/rag-playbook-course.png)](https://maven.com/applied-llms/rag-playbook)
-
-[Learn more :octicons-arrow-right-24:](./systematically-improve-your-rag.md){ .md-button .md-button--primary }
-
-Join our intensive course starting February 2024 to systematically improve your Retrieval-Augmented Generation (RAG) systems. Learn how to build robust processes for identifying system bottlenecks, significantly enhance your probabilistic systems, and implement advanced RAG techniques for real-world applications.
-
-- Establish evaluation pipelines using synthetic data and user feedback to build evals and fine-tune systems
-- Implement classification systems to segment queries, identify bottlenecks, and detect drift
-- Optimize multi-index search strategies to improve search quality with routers and query understanding
-- Design user interfaces to collect feedback and help users understand system operations
-
-Don't miss this opportunity to transform your RAG capabilities and stay ahead in the rapidly evolving field of applied AI.
-
-[Apply Now (starts Feb 4)](https://maven.com/applied-llms/rag-playbook){ .md-button .md-button--primary }
 
 ## Stay Updated
 

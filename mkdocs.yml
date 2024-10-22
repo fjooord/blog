@@ -1,5 +1,5 @@
 site_name: Lascari AI
-site_author: Jason Liu
+site_author: Ford Lascari
 site_description: >-
   Notes about my hobbies and other things I find interesting.
 repo_name: blog
@@ -125,15 +125,13 @@ markdown_extensions:
 nav:
   - Home: 
     - Introductions: 'index.md'
-    - Investments: "investments.md"
+    - My AI Journey: "my_ai_journey.md"
     - User Manual: "user_manual.md"
-    - Books: 'books.md'
   - Consulting:
     - Consulting Services: "services.md"
     - Jump on a Call: "expert-calls.md"
     - Experts and Vendors: "experts-and-vendors.md"
-  - AI Engineering Job Board: "https://jobs.applied-llms.org"
-  - Learn to Improve Your RAG: "systematically-improve-your-rag.md"
+  - Case Studies: "systematically-improve-your-rag.md"
   - Writing:
     - "writing/index.md"
 plugins:
@@ -168,7 +166,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/FJ000RD
     - icon: fontawesome/brands/github
-      link: https://github.com/jxnl
+      link: https://github.com/fjooord
 extra_javascript:
   - javascripts/mathjax.js
   - javascripts/analytics.js

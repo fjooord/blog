@@ -5,6 +5,8 @@ description: Expert consulting services to accelerate AI product development, mi
 
 # Consulting Services
 
+From growing up, I've always been a builder and a tinkerer and I really want to be able to get a wide variety of experience and sharpen my sword on your project.
+
 
 ??? warning "I'm currently at capacity until the end of April 2025"
 
