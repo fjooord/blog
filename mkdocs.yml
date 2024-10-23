@@ -133,7 +133,7 @@ nav:
     - Enterprise Partnership: "enterprise-partnership.md"
     - Implementation Package: "implementation-package.md"
   - Case Studies: 
-    - "writing/index.md"
+    - "writing/category/case-studies/"
   - Writing:
     - "writing/index.md"
 plugins:
