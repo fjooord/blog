@@ -17,7 +17,7 @@ description: Comprehensive monthly support for teams serious about AI implementa
 
 ## Investment
 
-**$9,500/month**
+**$5,500/month**
 *Minimum 3-month commitment*
 
 ## Is This Right for You?

@@ -14,7 +14,7 @@ Choose the consultation format that best fits your needs:
 - Quick project reviews
 - Immediate actionable insights
 
-**Investment: $250**
+**Investment: $200**
 
 [Book a Quick Consultation](https://cal.com/fjooord/expert-call){ .md-button .md-button--secondary }
 
@@ -36,7 +36,7 @@ Choose the consultation format that best fits your needs:
     - Specific recommendations
     - Action plan and next steps
 
-**Investment: $500**
+**Investment: $400**
 
 [Book a Comprehensive Consultation](https://cal.com/fjooord/expert-call-55-minutes){ .md-button .md-button--primary }
 
