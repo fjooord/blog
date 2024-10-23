@@ -29,6 +29,6 @@ The Enterprise Partnership is ideal for teams who:
 - Want to accelerate their AI development
 - Require regular technical support and code reviews
 
-[Schedule a Discovery Call](https://form.typeform.com/to/gqgTx3I6){ .md-button .md-button--primary }
+[Schedule a Discovery Call](https://zpk6iwc7ty5.typeform.com/to/jKqWBkbp){ .md-button .md-button--primary }
 
 [Back to Services](services.md){ .md-button .md-button--secondary }

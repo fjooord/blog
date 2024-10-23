@@ -39,6 +39,6 @@ The Implementation Package is ideal for organizations that:
 - Want to ensure best practices in AI implementation
 - Require custom solutions tailored to their unique needs
 
-[Request a Custom Proposal](https://form.typeform.com/to/gqgTx3I6){ .md-button .md-button--primary }
+[Request a Custom Proposal](https://zpk6iwc7ty5.typeform.com/to/jKqWBkbp){ .md-button .md-button--primary }
 
 [Back to Services](services.md){ .md-button .md-button--secondary }

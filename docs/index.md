@@ -57,7 +57,5 @@ description: Explore RAG techniques, AI engineering jobs, and consulting insight
 
 </div>
 
-## Stay Updated
 
-I share interesting content, including my own writing, thoughts, and experiences, no more than twice a month.
-<script async data-uid="fe6b71773e" src="https://fivesixseven.ck.page/fe6b71773e/index.js"></script>
+<script async data-uid="2c30d1cf0f" src="https://fjooord.ck.page/2c30d1cf0f/index.js"></script>

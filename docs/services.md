@@ -35,16 +35,17 @@ I focus on:
 
 Choose the service that best fits your needs:
 
-[Quick Consultation](expert-calls.md#quick-consultation){ .md-button .md-button--secondary }
-[Comprehensive Consultation](expert-calls.md#comprehensive-consultation){ .md-button .md-button--secondary }
-[Enterprise Partnership](enterprise-partnership.md){ .md-button .md-button--primary }
+[Single Consultation](expert-calls.md){ .md-button .md-button--primary }
+
+[Enterprise Partnership](enterprise-partnership.md){ .md-button .md-button--secondary }
+
 [Implementation Package](implementation-package.md){ .md-button .md-button--primary }
 
 ## Guarantee
 
 Your success is my priority. I offer a money-back guarantee on all services if you're not completely satisfied with the results.
 
-[Schedule Initial Consultation](https://form.typeform.com/to/gqgTx3I6){ .md-button .md-button--primary }
+[Schedule Initial Consultation](https://zpk6iwc7ty5.typeform.com/to/jKqWBkbp){ .md-button .md-button--primary }
 
 ---
 

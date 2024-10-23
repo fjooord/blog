@@ -64,7 +64,7 @@ These principles ensure that your AI initiatives remain grounded in real-world a
 
 And over the past few years I've worked with a dozen companies to help them navigate the landscape. **I know what works and what doesn't.** For everything else, I have a network of trusted experts and vendors to help us.
 
-[Request a Consultation](https://form.typeform.com/to/gqgTx3I6){ .md-button .md-button--primary }
+[Request a Consultation](https://zpk6iwc7ty5.typeform.com/to/jKqWBkbp){ .md-button .md-button--primary }
 
 ## An investment in regret minimization
 
@@ -98,4 +98,4 @@ If these are too much, I suggest reading my [blog](./writing/index.md) or check 
 
 For services beyond async support, I ask for at least a 3-month commitment. You can pay through Stripe, and my assistant will contact you after. Or, you can fill out our form, and we'll reach out to you.
 
-[Request a Consultation](https://form.typeform.com/to/gqgTx3I6){ .md-button .md-button--primary }
+[Request a Consultation](https://zpk6iwc7ty5.typeform.com/to/jKqWBkbp){ .md-button .md-button--primary }
