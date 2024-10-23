@@ -30,8 +30,8 @@ theme:
       quote: octicons/quote-16
   features:
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.code.select
@@ -127,11 +127,13 @@ nav:
     - Introductions: 'index.md'
     - My AI Journey: "my_ai_journey.md"
     - User Manual: "user_manual.md"
-  - Consulting:
+  - Services:
     - Consulting Services: "services.md"
-    - Jump on a Call: "expert-calls.md"
-    - Experts and Vendors: "experts-and-vendors.md"
-  - Case Studies: "systematically-improve-your-rag.md"
+    - Expert Calls: "expert-calls.md"
+    - Enterprise Partnership: "enterprise-partnership.md"
+    - Implementation Package: "implementation-package.md"
+  - Case Studies: 
+    - "writing/index.md"
   - Writing:
     - "writing/index.md"
 plugins:

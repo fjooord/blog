@@ -1,38 +1,43 @@
 ---
-description: Book expert AI consultations with Jason Liu. Choose between quick and
-  comprehensive sessions to address your AI challenges effectively.
+description: Get expert guidance on your AI initiatives through focused consultations. Choose between quick problem-solving sessions and comprehensive strategic reviews.
 ---
 
-# Expert Calls with Jason Liu
+# Expert Consultation Options
 
-## AI Consultation Options
+Choose the consultation format that best fits your needs:
 
-I offer two types of expert calls to address your AI challenges:
+## Quick Consultation (25 minutes)
+*For focused questions and immediate problem-solving*
 
-### 1. Quick Consultation (25 minutes)
+- Technical queries and roadblock resolution
+- Strategy validation
+- Quick project reviews
+- Immediate actionable insights
 
-For focused questions and problem-solving.
+**Investment: $250**
 
-- Purpose: Technical queries, strategy checks, roadblock resolution
-- Outcome: Insights to advance your project
+[Book a Quick Consultation](https://cal.com/fjooord/expert-call){ .md-button .md-button--secondary }
 
-[Book a Quick Consultation](https://cal.com/jasonliu/expert-call){ .md-button .md-button--secondary }
+## Comprehensive Consultation (55 minutes)
+*In-depth analysis with written recommendations*
 
-### 2. Comprehensive Consultation (55 minutes with memo)
+### Process:
+1. **Pre-call**
+    - Submit your questions and documentation
+    - Materials review and preparation
 
-For in-depth analysis and planning of AI initiatives.
+2. **Consultation**
+    - Deep dive into AI challenges
+    - Strategy development
+    - Team collaboration welcome
+   
+3. **Post-call**
+    - Detailed memo summarizing discussion
+    - Specific recommendations
+    - Action plan and next steps
 
-1. Pre-call:
-   - Send questions and documents
-   - I'll review your materials
+**Investment: $500**
 
-2. Consultation:
-   - Discuss AI challenges and opportunities
-   - Develop strategies
-   - Include team members as needed
+[Book a Comprehensive Consultation](https://cal.com/fjooord/expert-call-55-minutes){ .md-button .md-button--primary }
 
-3. Post-call:
-   - Receive a memo summarizing our discussion
-   - Includes recommendations and next steps
-
-[Book a Comprehensive Consultation](https://cal.com/jasonliu/expert-call-55-minutes){ .md-button .md-button--primary }
+[Back to Services](services.md){ .md-button .md-button--secondary }
