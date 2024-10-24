@@ -6,6 +6,17 @@ description: Expert AI consulting services to accelerate your product developmen
 
 Transform your AI initiatives with expert guidance and hands-on implementation support. I offer a range of services to help you navigate the complexities of AI product development and drive measurable business outcomes.
 
+## Service Offerings
+
+**Choose the service that best fits your needs:**
+
+[Single Consultation](expert-calls.md){ .md-button .md-button--primary }
+
+[Enterprise Partnership](enterprise-partnership.md){ .md-button .md-button--secondary }
+
+[Implementation Package](implementation-package.md){ .md-button .md-button--primary }
+
+
 ## Why Work With Me
 
 I bring practical experience from building and optimizing AI systems across multiple industries:
@@ -30,16 +41,6 @@ I focus on:
 - Building systems that learn from feedback
 - Prioritizing AI initiatives for maximum impact
 - Training teams on AI development best practices
-
-## Service Offerings
-
-Choose the service that best fits your needs:
-
-[Single Consultation](expert-calls.md){ .md-button .md-button--primary }
-
-[Enterprise Partnership](enterprise-partnership.md){ .md-button .md-button--secondary }
-
-[Implementation Package](implementation-package.md){ .md-button .md-button--primary }
 
 ## Guarantee
 
