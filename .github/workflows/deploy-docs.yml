@@ -40,5 +40,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
+      - name: Ensure CNAME file
+        run: echo "lascari.ai" > docs/CNAME
+
       - name: Build and deploy MkDocs
         run: mkdocs gh-deploy --force
