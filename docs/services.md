@@ -50,4 +50,4 @@ Your success is my priority. I offer a money-back guarantee on all services if y
 
 ---
 
-*Need a lighter engagement? Check out my [blog](./writing/index.md) for valuable insights at a fraction of the cost.*
+*Need a lighter engagement? Check out my [blog](./writing/index.md) for valuable insights at no cost!*
