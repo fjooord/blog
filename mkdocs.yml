@@ -2,8 +2,9 @@ site_name: Lascari AI
 site_author: Ford Lascari
 site_description: >-
   Notes about my hobbies and other things I find interesting.
-repo_name: blog
-repo_url: https://github.com/fjooord/blog/
+# Uncomment the below to have the repo show in top right
+# repo_name: blog
+# repo_url: https://github.com/fjooord/blog/
 site_url: https://lascari.ai/
 edit_uri: edit/main/docs/
 copyright: Copyright &copy; 2024 Ford Lascari
@@ -125,7 +126,6 @@ markdown_extensions:
 nav:
   - Home: 
     - Introductions: 'index.md'
-    - My AI Journey: "my_ai_journey.md"
     - User Manual: "user_manual.md"
   - Services:
     - Consulting Services: "services.md"

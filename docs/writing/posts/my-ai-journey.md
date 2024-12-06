@@ -1,5 +1,19 @@
 ---
+authors:
+- fjooord
+categories:
+- Personal Growth
+comments: true
+date: 2024-12-06
 description: A personal narrative of my path to becoming a leading generative AI consultant
+draft: false
+slug: my-ai-journey
+tags:
+- advice
+- personal growth
+- self-improvement
+- career tips
+- mental health
 ---
 
 # My AI Journey
@@ -9,6 +23,9 @@ Every journey has its roots, and mine begins with an unconventional childhood th
 ## Early Years: A Foundation in Building
 
 I was fortunate to have an unusual childhood that shaped my approach to technology. My father, an early AOL employee who retired at 35 after the company's IPO, spent countless hours with me during my formative years. Together, we explored hands-on skills like carpentry, metalworking, and automotive repair. While this might seem disconnected from my current work in AI, these early experiences instilled in me a fundamental love for building and problem-solving.
+
+<!-- more -->
+
 
 Despite growing up during the digital revolution, my coding experience was limited. Our Mac-only household made it challenging to explore my initial interest in Xbox game modding. My first real introduction to programming came through high school robotics club, where I primarily focused on mechanical engineering—a natural extension of my hands-on background.
 
