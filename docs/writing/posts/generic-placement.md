@@ -8,7 +8,7 @@ date: 2024-12-05
 description: Discover insightful advice for young people, emphasizing choices, confidence,
   and personal growth through lived experiences.
 draft: false
-slug: ai-writing-style-matching-case-study
+slug: ai-report-generation-style-matching-case-study
 tags:
 - prompt engineering
 - chain of thought prompting
@@ -46,18 +46,6 @@ Here's how we solved this exponentially more complex challenge.
 
 When tackling a complex challenge like this, it's crucial to explore every potential solution—even ones that might seem imperfect at first glance.
 
-!!! abstract "Explore Every Option"
-
-    By examining different approaches, we can better understand the tradeoffs and limitations of each option. 
-    
-    This knowledge is invaluable for making informed decisions about which direction to pursue.
-
-    [Contact us](/services) to explore solutions for your project.
-
-Let's walk through each solution we explored, including the approaches we ultimately decided against. 
-
-After all, understanding why certain solutions may not be suitable is just as important as knowing which ones could work!
-
 ### 1. Prompt Engineering Solutions
 
 ### Basic Few-Shot Learning
@@ -73,7 +61,7 @@ Issues faced:
 - Inconsistent style matching
 - Example data contaminating the new report generation
     - The meaning that data from the example such as tests results, diagnoses, etc. from the example were being referenced as part of the new report generation
-    - This is a huge 
+    - This is a huge issue as the example data is not representative of the new patient and can lead to incorrect diagnoses and recommendations
 
 ### Structured Output Monologues
 
@@ -95,67 +83,44 @@ Results:
 ### 2. Model Fine-tuning Approaches
 
 !!! warning "Fine Tuning is the Last Resort"
-
-    Always exhaust your prompting options before fine tuning.  Fine tuning is expensive, time consuming, and requires heavy monitoring and testing to ensure it's working.
+    Always exhaust your prompting options before fine tuning. Fine tuning is expensive, time consuming, and requires heavy monitoring and testing to ensure it's working.
 
     Meta has a great post on [when to fine tune](https://ai.meta.com/blog/adapting-large-language-models-llms/) that you should check out.
 
-We are now at a fork in the road. We're having issues with prompt engineering not cutting it so far which is leading us to think that we could look into fine tuning but fine tuning is a very very difficult thing to do properly. 
+We explored two fine-tuning approaches, but both proved impractical:
 
-You need to have clear look into your data and likely MLOps practitioners within your organization or your client's organization that can ensure continued training deployment and all the other things that come into play with fine tuning 
+**Individual User Models**
 
-### Individual User Models
+- Create personalized models for each psychologist
+- Collect writing samples for training
+- Issues:
+    - Resource intensive
+    - Required too much training data per user 
+    - Not feasible for early product stage
 
-Our first instinct was to create personalized models for each psychologist. The concept was simple on paper:
+**Style Clustering**
 
-- Collect writing samples as users interact with the system
-- Fine-tune separate models for each user
-- Use these personalized models for future generations
-
-Why we didn't proceed:
-
-- Resource intensive (hosting hundreds of models)
-- Required significant amounts of training data per user
-    - The clients system did not have an easy way to collect this data already built in
-- Not feasible for a product still finding market fit
-
-### Style Clustering
-
-We then considered a middle-ground approach:
-
-- Analyze writing patterns across all users
-- Identify 3-4 distinct writing style clusters
-- Fine-tune a model for each cluster
-- Match new users to the closest style cluster
-
-Limitations:
-
-- Still required significant data collection
-- Risk of oversimplifying unique writing voices
-- User dissatisfaction with "close but not quite" matches, thus losing all the time and money invested in the style fine tunes
+- Group users into 3-4 writing style clusters
+- Fine-tune a model per cluster
+- Issues:
+    - Heavy data requirements
+    - Oversimplified unique voices
+    - Risk of user dissatisfaction with "close but not quite" matches, thus a waste of resources
 
 ## The Breakthrough: Multi-Step Prompting with Sanitization
 
 After these experiments, we realized we needed to solve two distinct problems:
-
-1. Style preservation
-2. Information containment
-
-!!! tip
-
-    Determine with your client the importance of each objective
-
-    We found that the client was more concerned with information containment than with perfect style matching.
-
-    At some point, you will need to make a trade off between the two objectives.
 
 This led to our two-step approach:
 
 ### Step 1: Replacing Example Specific Data with Generic Placeholders
 
 First, we developed a systematic way to strip examples of specific content while preserving style:
+
 - Our previous experiments showed that the examples data were generally adjsuting the style and structure of the report
-- The model was also while trying to mimic the style, determine what was "writing style" and "structure" and what was "client specific data"
+- The model was also while trying to multiple tasks at the same time: 
+    - Write in the style of the example 
+    - Replace the necessary client specific data from the example with the new patient data
 - What if we break this process into multiple steps?
     - First, we identify what is client specific data and replace it with generic placeholders
     - Second, we ask the model to mimic the style and structure of the example, but now it doesn't have to determine what is client specific data and it only has to mimic the style and plug in the new patient data where necessary
@@ -315,36 +280,20 @@ Our generation process stayed mostly the same:
 
 ## Ready to Implement This in Your Own System?
 
-If you're building an AI report generation system that needs to match specific writing styles while handling sensitive information, here's how to adapt our approach :
+If you're building an AI report generation system that needs to match specific writing styles while handling sensitive information:
 
-1. Start with our prompt template below and customize the sections:
+1. Start with our prompt template below:
+    - Define your domain-specific data types and examples
+    - Create clear replacement rules
+    - Build validation checks for sensitive information
 
-    - Replace [YOUR_DOCUMENT_TYPE] with "report" or your specific report type
-    - Define [YOUR_DOMAIN_SPECIFIC_DATA] (patient data, test scores, etc)
-    - List [EXAMPLES_OF_YOUR_DOMAIN_SPECIFIC_DATA] relevant to your reports
-
-2. Create generic identifiers for your report data:
-
-    - Map common data types (names, dates, metrics) to placeholders
-    - Define clear rules for what should/shouldn't be replaced
-    - Document identifier formats ([PATIENT_NAME], [TEST_DATE], etc)
-
-3. Build validation checks specific to report generation:
-
-    - Verify no sensitive information leakage
-    - Confirm report structure remains intact
-    - Check all identifiers are properly replaced
-
-4. Test with a small batch of real reports:
-
-    - Start with 2-3 example reports
+2. Test with a small batch (2-3) of real reports:
     - Validate style preservation
     - Check for data contamination
+    - Gather feedback and refine
 
-5. Scale gradually and refine:
-
+3. Scale gradually:
     - Monitor generated reports
-    - Gather feedback from report writers
     - Update identifiers and rules as needed
 
 ### Prompt
