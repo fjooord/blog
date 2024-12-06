@@ -16,32 +16,47 @@ tags:
 - case study
 ---
 
-# How We Solved AI Writing Style Matching Using Multi-Step Prompts
+# How You Can Build an AI Report Generator That Perfectly Matches Your Writing Style
 
-Ever had an AI assistant write something that sounds nothing like you? For psychologists using our client's report-writing system, this wasn't just annoying—it was destroying their trust in the entire product.
+If you've ever used AI to help write reports or documentation, you know the frustration: the output reads like it was written by someone else entirely. 
 
-## The Challenge: Making AI Write Like You
+For businesses trying to maintain a consistent voice across thousands of documents, this isn't just an annoyance—it's a dealbreaker.
 
-Picture this: You're a psychologist who spends hours writing detailed clinical reports. You've developed a distinct writing style that your patients and colleagues have come to expect. Now, an AI assistant offers to help with these reports, promising to save you valuable time. There's just one problem: the reports it generates sound nothing like you.
+## The Challenge: Making AI Write Like Your Organization
+
+Every organization has its own voice. Whether it's technical documentation, business reports, or customer communications, that consistent style builds trust and professionalism. 
+
+When AI generates content that doesn't match this voice, it creates friction and erodes confidence in your product.
 
 <!-- more -->
+### Our Client
+We encountered this firsthand with a client providing report writing services to psychologists. They needed to automate report generation while preserving the unique writing style of hundreds of different practitioners.
 
-This was exactly the challenge our client faced. They had built a promising product to help psychologists automate their clinical report writing. The system could take patient data, test results, and background information to generate comprehensive reports. But there was a critical flaw: the AI's writing style was generic, making psychologists hesitant to use it.
+Each psychologist had spent years developing their own approach tailored to their specific patient populations.
+
+The challenge wasn't just matching one organizational voice—it was dynamically adapting to however many psychologists joined their platform.
+
+Generic AI outputs weren't just unsuitable—they risked undermining the trust built between each practitioner and their patients.
+
+Here's how we solved this exponentially more complex challenge.
 
 ## Exploring the Solution Space
 
-Before landing on our final approach, we explored several potential solutions. Let's dive into each one:
+When tackling a complex challenge like this, it's crucial to explore every potential solution—even ones that might seem imperfect at first glance.
+
+!!! abstract "Explore Every Option"
+
+    By examining different approaches, we can better understand the tradeoffs and limitations of each option. 
+    
+    This knowledge is invaluable for making informed decisions about which direction to pursue.
+
+    [Contact us](/services) to explore solutions for your project.
+
+Let's walk through each solution we explored, including the approaches we ultimately decided against. 
+
+After all, understanding why certain solutions may not be suitable is just as important as knowing which ones could work!
 
 ### 1. Prompt Engineering Solutions
-
-!!! note "Prompt Engineering is your friend"
-
-    Always exhaust your prompting options before fine tuning
-
-!!! warning "Prompt Engineering is your friend"
-
-    Always exhaust your prompting options before fine tuning
-
 
 ### Basic Few-Shot Learning
 
@@ -56,13 +71,7 @@ Issues faced:
 - Inconsistent style matching
 - Example data contaminating the new report generation
 
-### Structured Monologues
-
-<aside>
-
-Interested in this approach, check out this post!
-
-</aside>
+### Structured Output Monologues
 
 We then tried a more sophisticated approach using structured monologues:
 
@@ -75,7 +84,17 @@ While this showed promise, we hit two roadblocks:
 - Implementation challenges in the client's .NET environment
 - Complex prompt structures leading to occasional hallucinations
 
+!!! info "Structured Monologues"
+
+    Interested in this approach? Check out this post!
+
 ### 2. Model Fine-tuning Approaches
+
+!!! warning "Fine Tuning is the Last Resort"
+
+    Always exhaust your prompting options before fine tuning.  Fine tuning is expensive, time consuming, and requires heavy monitoring and testing to ensure it's working.
+
+    Meta has a great post on [when to fine tune](https://ai.meta.com/blog/adapting-large-language-models-llms/) that you should check out.
 
 ### Individual User Models
 
