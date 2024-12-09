@@ -16,7 +16,8 @@ tags:
 - case study
 ---
 
-# How You Can Build an AI Report Generator That Perfectly Matches Your Writing Style
+# You Don't Need to Fine-Tune to Match YOUR Writing Style
+## How You Can Build an AI Report Generator That Perfectly Matches Your Writing Style
 
 **"This doesn't sound like us at all."**
 
@@ -24,11 +25,20 @@ It's the common refrain when organizations try using AI to generate reports, doc
 
 While AI can produce grammatically perfect content, it often fails at the crucial task of matching an organization's voice - transforming from minor inconvenience to major blocker when scaling across thousands of documents.
 
+Using a novel two-step approach focused on separating style from data, we achieved:
+
+- Near perfect style matching according to practitioner feedback
+- Zero data contamination from example reports across all test cases
+- A scalable solution that works for 10 or 1000 users
+- No need for expensive fine-tuning or ML expertise
+
 ## The Challenge: Beyond Simple Style Matching
 
 Our client, a report writing service for psychologists, presented an even more complex challenge. 
 
 They needed AI that could adapt to hundreds of distinct writing styles - one for each practitioner on their platform.
+
+<!-- more -->
 
 These weren't just stylistic preferences. Each psychologist had developed their reporting approach over years, carefully tailored to their specific patient populations. 
 
@@ -41,8 +51,6 @@ But this approach brings its own challenges: significant data requirements, expe
 For many organizations, especially those supporting multiple users, it's prohibitively expensive and time-consuming.
 
 We needed a different approach: one that could match writing styles precisely through prompt engineering alone, making it accessible to organizations without ML expertise.
-
-<!-- more -->
 
 
 ## Iterating Toward a Solution
@@ -230,10 +238,8 @@ The only modification to our generation process is ensuring the model understand
 
 Our two-step approach delivered measurable improvements across key metrics:
 
-- Style matching accuracy improved from 45% to 92% across our test set
-- Data contamination incidents dropped by over 70%
-- Report generation time increased by only 1.2 seconds despite the additional sanitization step
-- Client feedback indicated that 95% of practitioners found the AI-generated reports indistinguishable from their usual writing style
+- 0% data contamination incidents across our test set
+- Feedback indicated that practitioners found the new reports matching their style
 
 Most importantly, our approach scaled. 
 
@@ -252,84 +258,12 @@ Instead, focus on:
 
 The beauty of this approach lies in its simplicity - it delivers enterprise-grade results using prompt engineering alone.
 
-## From Theory to Practice: Implementation Guide
-
-Successful implementation of this approach relies on three core components:
-
-### 1. Robust Identifier System
-Your identifier system is the foundation of the entire process. We found these principles crucial:
-
-- Create distinct, unambiguous identifiers for each data type
-- Ensure identifiers are easily recognizable by both humans and AI
-- Start with a minimal set and expand based on real usage patterns
-
-### 2. Systematic Validation
-Build validation into every step of your pipeline:
-
-- Automated checks for data leakage (we caught 99% of potential leaks)
-- Style consistency verification
-- Regular sampling of generated reports
-
-### 3. Clear Documentation
-Success at scale requires:
-
-- Comprehensive identifier definitions
-- Well-documented edge cases
-- Clear guidelines for adding new identifiers
-- Regular updates based on user feedback
-
-## Ready to Implement? Start Here
-
-The approach above can be adapted to any domain requiring style matching while handling sensitive information. Here's your implementation roadmap:
-
-### 1. Start With Our Template
-```markdown
-# Purpose
-You are a system designed to identify and replace all [YOUR_DOMAIN_SPECIFIC_DATA] (e.g. [EXAMPLES_OF_YOUR_DOMAIN_SPECIFIC_DATA], etc) with generic identifiers.
-
-# Context
-Our users provide examples of [YOUR_DOCUMENT_TYPE] that they have written in the past so that their writing style can be used to generate new [YOUR_DOCUMENT_TYPE]
-We have been having issues with the newly generated [YOUR_DOCUMENT_TYPE] containing [YOUR_DOMAIN_SPECIFIC_DATA] from the examples
-    - This contamination is unacceptable since the data in the examples are not representative of the [YOUR_DOCUMENT_TYPE] for the new patient
-You are going to replace the [YOUR_DOMAIN_SPECIFIC_DATA] with generic identifiers so the example clearly designates:
-    - What needs to stay (ie the writing style and format)
-    - What needs to be changed ([EXAMPLES_OF_YOUR_DOMAIN_SPECIFIC_DATA], etc)
-
-# Task
-Replace all [YOUR_DOMAIN_SPECIFIC_DATA] with generic identifiers
-
-# Types of [YOUR_DOMAIN_SPECIFIC_DATA] to Replace
-## [YOUR_DOMAIN_SPECIFIC_DATA_TYPE_1]
-### Definition
-[DEFINITION_OF_YOUR_DOMAIN_SPECIFIC_DATA_TYPE_1]
-### Examples
-[EXAMPLES_OF_YOUR_DOMAIN_SPECIFIC_DATA_TYPE_1]
-### Replacement Identifier
-[GENERIC_IDENTIFIER_FOR_YOUR_DOMAIN_SPECIFIC_DATA_TYPE_1]
-
-...[REPEAT_FOR_ALL_YOUR_DOMAIN_SPECIFIC_DATA_TYPES] ...
-
-# Rules
-- Only replace the identifiers that are defined above
-    - Do not make up new identifiers
-- Do not change the format or structure of the [YOUR_DOCUMENT_TYPE] section, only replace the identifiers
-
-# Instructions
-- Read the [YOUR_DOCUMENT_TYPE] section thoroughly
-- Identify all the domain-specific identifiers in the [YOUR_DOCUMENT_TYPE] section
-- Replace all the domain-specific identifiers with the appropriate replacement identifier
-```
-
-### 2. Follow the Scale-Up Process
-
-- Begin with 2-3 example reports
-- Monitor generated content carefully
-- Expand your identifier set based on real needs
-- Build validation checks incrementally
-
-Remember: The power of this approach lies in its simplicity - delivering enterprise-grade results through prompt engineering alone, without complex ML infrastructure.
+## Interested in Implementing This Yourself?
+Check out the [open source implementation](https://github.com/Lascari-AI/Report-Style-Transfer) to start building your own style-matching system.
 
 !!! cta "Need Help?"
     Building AI systems can be complex. 
 
     [Let's discuss your project](/services) and find the right approach for your needs.
+
+<script async data-uid="2c30d1cf0f" src="https://fjooord.ck.page/2c30d1cf0f/index.js"></script>
