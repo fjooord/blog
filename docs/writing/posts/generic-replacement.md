@@ -16,29 +16,36 @@ tags:
 - case study
 ---
 
-# You Don't Need to Fine-Tune to Match YOUR Writing Style
-## How You Can Build an AI Report Generator That Perfectly Matches Your Writing Style
+# You Don't Need to Fine-Tune to Clone YOUR Report Style
 
 **"This doesn't sound like us at all."**
 
-It's the common refrain when organizations try using AI to generate reports, documentation, etc. 
+It's the all-too-familiar frustration when organizations try using AI to generate reports and documentation. 
 
-While AI can produce grammatically perfect content, it often fails at the crucial task of matching an organization's voice - transforming from minor inconvenience to major blocker when scaling across thousands of documents.
+While AI can produce grammatically perfect content, it often fails at the crucial task of matching an organization's voice - turning what should be a productivity boost into a major bottleneck.
 
-Using a novel two-step approach focused on separating style from data, we achieved:
+I'll show you how we solved this using a novel two-step approach that separates style from data. 
 
-- Near perfect style matching according to practitioner feedback
-- Zero data contamination from example reports across all test cases
-- A scalable solution that works for 10 or 1000 users
-- No need for expensive fine-tuning or ML expertise
+By breaking down what seemed like an AI fine-tuning problem into a careful prompt engineering solution, we achieved something remarkable: 
+
+**AI-generated reports that practitioners couldn't distinguish from their own writing.**
+
+Here's what we delivered:
+
+- Style matching so accurate that practitioners consistently approved the outputs
+- Complete elimination of data contamination from example reports
+- A solution that scales effortlessly from 10 to 1000 users
+- Zero need for expensive fine-tuning or ML expertise
+
+Best of all? You can implement this approach yourself using prompt engineering alone - no complex ML infrastructure required.
+
+<!-- more -->
 
 ## The Challenge: Beyond Simple Style Matching
 
 Our client, a report writing service for psychologists, presented an even more complex challenge. 
 
 They needed AI that could adapt to hundreds of distinct writing styles - one for each practitioner on their platform.
-
-<!-- more -->
 
 These weren't just stylistic preferences. Each psychologist had developed their reporting approach over years, carefully tailored to their specific patient populations. 
 
@@ -203,7 +210,7 @@ Comparisons to peers or population norms using percentiles or proportions.
 
 #### Example Input/Output
 
-##### Input
+##### Input (Example Report)
 ```plaintext
 PIIPERSON1's language skills were assessed using the WISC-V and BASC
 His performance on the WISC-V Verbal Comprehension Index (VCI) resulted in a composite score at the 30th percentile, indicating his language comprehension and verbal processing are average for his age group
@@ -214,7 +221,7 @@ His first-grade teacher, however, had concerns, noting his abilities as at-risk 
 Below Average scores on the Functional Communication scale indicate that the student demonstrates poor expressive and receptive communication skills and/or may have difficulty seeking out and finding information on their own
 ```
 
-##### Output
+##### Output (Sanitized Report)
 ```plaintext
 PIIPERSON1's language skills were assessed using the [TEST_NAME] and [TEST_NAME]
 His performance on the [TEST_NAME] [TEST_METRIC] resulted in a [TEST_SCORE] at the [PEER_COMPARISON], indicating his language comprehension and verbal processing are [QUALITATIVE_DESCRIPTION] for his age group
